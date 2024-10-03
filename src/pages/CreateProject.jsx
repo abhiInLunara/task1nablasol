@@ -14,6 +14,9 @@ const CreateProject = () => {
     startDate: "",
     endDate: "",
     notes: "",
+    access: "",
+    view: "",
+    tasks: [],
   });
 
   const [currentStep, setCurrentStep] = useState(1);
@@ -81,7 +84,7 @@ const CreateProject = () => {
 
             {(currentStep > 1 && currentStep) < 4 && (
               <button
-                className="bg-blue-400 text-white w-fit  text-noraml px-6 py-1 rounded-md"
+                className="bg-blue-500 text-white w-fit  text-noraml px-6 py-1 rounded-md"
                 onClick={nextStep}
               >
                 Next
@@ -89,7 +92,7 @@ const CreateProject = () => {
             )}
             {currentStep === 4 && (
               <button
-                className="bg-blue-400 text-white w-fit  text-noraml px-6 py-1 rounded-md"
+                className="bg-blue-500 text-white w-fit  text-noraml px-6 py-1 rounded-md"
                 onClick={handleSubmit}
               >
                 Submit

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 // import borad from "../../public/images/board.png";
 // import list from "../../public/images/list.png";
-// import skf from '../'
 
 const Step2 = ({ handleChange, formData }) => {
   const [selectedView, setSelectedView] = useState("list");
